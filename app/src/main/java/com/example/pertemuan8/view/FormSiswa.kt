@@ -34,3 +34,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.pertemuan8.R
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun FormSiswa(
+    //edit 1 : parameter pilihanJK dan onSubmitButtonClicked
+    pilihanJK: List<String>,
+    onSubmitButtonClicked: (MutableList<String>) -> Unit,
+    modifier: Modifier = Modifier
+)
